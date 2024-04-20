@@ -9,7 +9,7 @@ public class Employee {
 	
 	public Employee(String employeeId, String fullName, String address, boolean gender) {
 		this.employeeId = employeeId;
-		this.fullName = fullName;
+		this.fullName = fullName
 		this.address = address;
 		this.gender = gender;
 	}
