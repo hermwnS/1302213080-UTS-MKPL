@@ -5,11 +5,15 @@ public class Employee {
 	private String employeeId;
 	private String fullName;
 	private String address;
-	private boolean gender; //true = Laki-laki, false = Perempuan
+	private Gender gender; //true = Laki-laki, false = Perempuan
+        
+        public enum Gender {
+            Laki_laki, Perempuan;
+        }
 	
-	public Employee(String employeeId, String fullName, String address, boolean gender) {
+	public Employee(String employeeId, String fullName, String address, Gender gender) {
 		this.employeeId = employeeId;
-		this.fullName = fullName
+		this.fullName = fullName;
 		this.address = address;
 		this.gender = gender;
 	}
